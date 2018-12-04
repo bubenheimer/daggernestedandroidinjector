@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2015-2016 Uli Bubenheimer. All rights reserved.
+ */
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.0-rc01'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
